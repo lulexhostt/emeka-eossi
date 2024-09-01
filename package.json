@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "node --max-old-space-size=4096 vite build",
     "preview": "vite preview",
-    "deploy": "yarn build && npx thirdweb@latest upload dist",
+    "deploy": "yarn build && npx thirdweb@latest upload dist"
     
   },
   "dependencies": {
@@ -29,6 +29,3 @@
   }
 }
 
-"scripts": {
-  "build": "node --max-old-space-size=4096 vite build"
-}
