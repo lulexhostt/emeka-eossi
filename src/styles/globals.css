@@ -1,22 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Inter", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Lato:wght@100;300;400;700;900&family=Paytone+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.linear-gradient {
+  background: linear-gradient(179.14deg,
+      rgba(32, 18, 63, 0) -7.14%,
+      #000000 87.01%);
 }
 
-a {
-  color: #84309c;
-  text-decoration: none;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  html {
 
-body {
-  color: #e7e8e8;
-  background: #070707;
+
+    font-family: 'Lato', sans-serif;
+  }
+
+  h5 {
+    @apply text-2xl;
+    font-family: 'Paytone One', sans-serif;
+  }
 }
