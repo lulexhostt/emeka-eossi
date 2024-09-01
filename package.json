@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node --max-old-space-size=4096 vite build",
     "preview": "vite preview",
-    "deploy": "yarn build && npx thirdweb@latest upload dist"
+    "deploy": "yarn build && npx thirdweb@latest upload dist",
+    
   },
   "dependencies": {
     "@thirdweb-dev/react": "^4",
@@ -26,4 +27,8 @@
     "vite": "^3",
     "vite-plugin-node-polyfills": "^0.7.0"
   }
+}
+
+"scripts": {
+  "build": "node --max-old-space-size=4096 vite build"
 }
